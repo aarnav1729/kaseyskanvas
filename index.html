@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en_US">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    
+    <base href="https://cyberoctane.com/">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="HandheldFriendly" content="true">
+
+    <!-- Page Title -->
+    <title>Kasey's Kanvas - Digital Design Studio</title>
+
+
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <!-- Appearance -->
+    <meta name="theme-color" content="#101315" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114"
+        href="./img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="./img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144"
+        href="./img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="./img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="./img/favicons/apple-touch-icon-180x180.png">
+
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="./img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="./img/favicons/android-chrome-192x192.png"
+        sizes="192x192">
+
+    <link rel="manifest" href="./manifest.json">
+
+    <meta name="msapplication-TileColor" content="#101315">
+    <meta name="msapplication-TileImage" content="./img/favicons/mstile-144x144.png">
+
+    <meta name="keywords" content="">
+
+    <!-- Bootstrap v4.1.3 Core CSS -->
+    <link rel="stylesheet" id="bootstrap_v4.1.3_core_css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" id="font_awesome_v5_css"
+        href="./vendor/font-awesome/v5.10.1/css/all.min.css" type="text/css">
+
+    <!-- Google Fonts API -->
+    <link rel="stylesheet" id="barlow_semi_condensed"
+        href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:100,200,300,400,500,600,700,800,900&display=swap">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" id="swiper_v4.5.0_css" href="./vendor/swiper/css/swiper.min.css"
+        type="text/css">
+    <link rel="stylesheet" id="iziToast_v1.4.0_css" href="./vendor/iziToast/iziToast.min.css"
+        type="text/css">
+
+    <!-- Website CSS -->
+    <link rel="stylesheet" id="main_css" href="./css/style.css" type="text/css">
+
+
+</head>
+
+<body>
+
+    <!------------------------------------------- Background Animation Starts ------------------------------------------->
+
+    <div id="threejs-container"></div>
+    <!-- Welcome-Globe-SVG Ends -->
+
+    <div id="dotted"></div>
+
+    <!------------------------------------------- Top Nav Bar Starts ------------------------------------------->
+
+    <nav id="home-navbar" class="page-nav">
+        <a class="nav-logo" href="https://www.github.com/aarnav1729/" target="_blank">
+            <svg id="cyberlogo" viewBox="0 0 53.6 38.93">
+                <g>
+                    <path d="M25.9,37.5c0-.7.1-5.6-4.2-5.6s-3.9,7,2.6,7A1.42,1.42,0,0,0,25.9,37.5Z"
+                        transform="translate(0 0.03)" />
+                    <path d="M27.8,37.5c0-.7-.1-5.6,4.2-5.6s3.9,7-2.6,7A1.42,1.42,0,0,1,27.8,37.5Z"
+                        transform="translate(0 0.03)" />
+                    <path
+                        d="M44.3.6,31.7,8.1a1.59,1.59,0,0,0,0,2.7l7.2,4.1a1.16,1.16,0,0,0,1.7-1V11.7a3.13,3.13,0,0,1,1.3-2.5l2-1.3A1.37,1.37,0,0,1,46,9.1V21.2a1.52,1.52,0,0,1-2.3,1.3L29.9,14.6a6.05,6.05,0,0,0-6.1,0L10,22.4a1.52,1.52,0,0,1-2.3-1.3V9.1A1.41,1.41,0,0,1,9.8,7.9l2.9,1.8a.91.91,0,0,1,.4.8V14a1.07,1.07,0,0,0,1.6.9L22,10.7A1.59,1.59,0,0,0,22,8L9.4.5A3,3,0,0,0,6,.5L1.1,3.3A2.43,2.43,0,0,0,0,5.3V26.2a2.14,2.14,0,0,0,1.1,1.9L6,30.9a3.43,3.43,0,0,0,3.4,0l16.2-9.5a2.55,2.55,0,0,1,2.4,0l16.2,9.5a3.43,3.43,0,0,0,3.4,0L52.5,28a2.14,2.14,0,0,0,1.1-1.9V5.3a2.14,2.14,0,0,0-1.1-1.9L47.6.5A2.7,2.7,0,0,0,44.3.6Z"
+                        transform="translate(0 0.03)" />
+                </g>
+            </svg>
+            <div class="hover-text">
+                <p>Kasey's&nbsp;Kanvas</p>
+            </div>
+        </a>
+        <a id="menu-btn" class="closed">
+            <div class="menu-stroke burger"></div>
+            <div class="menu-stroke burger"></div>
+            <div class="menu-stroke burger"></div>
+            <div id="cross01" class="menu-stroke cross"></div>
+            <div id="cross02" class="menu-stroke cross"></div>
+        </a>
+    </nav>
+    <div id="nav-color"></div>
+    <!-- Top Nav Bar Ends -->
+
+    <!------------------------------------------- Menu Starts ------------------------------------------->
+
+    <div id="menu" class="section">
+        <div id="menu-links">
+            <a href="https://www.github.com/aarnav1729/" onclick="menuOp()" class="menu-item" target="_blank">
+                <h3 class="plus">+</h3>
+                <h1>Home</h1>
+                <h4>01</h4>
+            </a>
+            <a href="https://www.github.com/aarnav1729/" onclick="menuOp()" class="menu-item" target="_blank">
+                <h3 class="plus">+</h3>
+                <h1>About&nbsp;US</h1>
+                <h4>02</h4>
+            </a>
+            <a href="https://www.github.com/aarnav1729/" onclick="menuOp()" class="menu-item" target="_blank">
+                <h3 class="plus">+</h3>
+                <h1>Services</h1>
+                <h4>03</h4>
+            </a>
+            <a href="https://www.github.com/aarnav1729/" onclick="menuOp()" class="menu-item" target="_blank">
+                <h3 class="plus">+</h3>
+                <h1>Projects</h1>
+                <h4>04</h4>
+            </a>
+            <a href="https://www.github.com/aarnav1729/" onclick="menuOp()" class="menu-item" target="_blank">
+                <h3 class="plus">+</h3>
+                <h1>Contact&nbsp;Us</h1>
+                <h4>05</h4>
+            </a>
+        </div>
+        <svg id="menu-svg" class="" viewbox="0 0 100 100">
+            <circle cx="50" cy="50" r="50"></circle>
+        </svg>
+    </div>
+    <!-- Menu Ends -->
+
+    <!------------------------------------------- Social Media Side Bar Starts ------------------------------------------->
+
+    <div id="social-bar-side" class="social-media side">
+        <div id="facebook" class="social-media-item">
+            <a class="link" href="https://www.github.com/aarnav1729/" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </div>
+        <div id="twitter" class="social-media-item">
+            <a class="link" href="https://www.github.com/aarnav1729/" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+        <div id="linkedin" class="social-media-item">
+            <a class="link" href="https://www.linkedin.com/company/aarnavsingh/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        <div id="behance" class="social-media-item">
+            <a class="link" href="https://www.github.com/aarnav1729/" target="_blank">
+                <i class="fab fa-behance"></i>
+            </a>
+        </div>
+        <div id="instagram" class="social-media-item">
+            <a class="link" href="https://www.instagram.com/aarnavsinghh/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Social Media Side Bar Ends -->
+
+
+    <!------------------------------------------- Home Section Starts ------------------------------------------->
+
+    <div class="section" id="home">
+
+        <div id="home-wrap">
+
+            <!-- Hello Text Row Starts -->
+            <div id="hello">
+                <h2 id="we-are">We<br>Are</h2>
+                <div id="dash-1" class="dash"></div>
+                <h2 class="slashes">///</h2>
+                <h2 class="tilde">~<br>~<br>~</h2>
+                <div id="agency">
+                    <h2 class="c-aligned">A</h2>
+                    <div class="h1-wrap">
+                        <h1 class="yellow">Digital</h1>
+                    </div>
+                    <div id="dash-2" class="dash"></div>
+                    <div class="h1-wrap r-aligned">
+                        <h1 class="yellow r-aligned">Design</h1>
+                    </div>
+                    <h2>Studio</h2>
+                </div>
+                <div id="co">
+                    <div class="h1-wrap">
+                        <h1 class="yellow">Kasey's</h1>
+                    </div>
+                    <div class="h1-wrap r-aligned">
+                        <h1 class="yellow r-aligned">Kanvas</h1>
+                    </div>
+                    <h2 class="tilde">~<br>~<br>~</h2>
+                    <h2 class="dots">...</h2>
+                </div>
+            </div> <!-- / Hello Text Row -->
+
+            <!-- Home-Section-Nav Row Starts -->
+            <div id="home-nav">
+                <div class="nav">
+                    <a href="https://github.com/aarnav1729/" class="nav-item" target="_blank">
+                        <h6 class="plus"> + </h6>
+                        <p class="nav-link">About Us</p>
+                        <hr class="nav-hr">
+                    </a>
+                    <a href="https://github.com/aarnav1729/" class="nav-item" target="_blank">
+                        <h6 class="plus"> + </h6>
+                        <p class="nav-link">Services</p>
+                        <hr id="about-us-hr" class="nav-hr">
+                    </a>
+                    <a href="https://github.com/aarnav1729/" class="nav-item" target="_blank">
+                        <h6 class="plus"> + </h6>
+                        <p class="nav-link">Projects</p>
+                        <hr class="nav-hr">
+                    </a>
+                    <a href="https://github.com/aarnav1729/" class="nav-item" target="_blank">
+                        <h6 class="plus"> + </h6>
+                        <p class="nav-link">Contact</p>
+                        <hr class="nav-hr">
+                    </a>
+                </div>
+                <div id="scroll-down-arrow" class="col-md-12 text-center">
+                    <img src="./img/svg/arrow-down.svg">
+                </div>
+            </div><!-- / Home-Section-Nav Row-->
+        </div><!-- / Home-wrap-->
+
+
+        <!-- Home-Section-Tip Starts -->
+        <div class="section-tip">
+            <h4 class="yellow">01</h4>
+            <h4>&nbsp;|&nbsp;</h4>
+            <h4>Welcome</h4>
+        </div>
+        <!-- Home-Section-Tip Ends -->
+
+    </div>
+
+    <!-- Home Section Ends -->
+
+    <!-------------------------------------------- About-Us Section Starts ------------------------------------------->
+
+    <div class="section about" id="about-us" data-wow-delay="1s">
+        <div class="tick-line">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="us-phrase">
+                    <div class="dash lg-only"></div>
+                    <div class="phrase">
+                        <h1>Welcome</h1>
+                        <h1 class="">To Our</h1>
+                        <h1 class="">Design Studio</h1>
+                    </div>
+                    <div class="dash lg-only bottom"></div>
+                </div>
+                <div class="col-md-6" id="us-text">
+                    <div class="dash lg-only"></div>
+                    <div class="wrap">
+                        <p class="text">
+                            We are a Minnesota based digital design studio and we help businesses like yours stand out amongst your competition. 
+                            We design everything from logos, brand identity, to websites and webapps, among many other services.
+                            We are certain we can help transform your business to one with a unique brand presence in no time.
+                        </p>
+                        <a href="https://github.com/aarnav1729/" class="link-btn" target="_blank">
+                            <p>Find Out&nbsp;More</p>
+                            <div class="btn-hov"></div>
+                            <img src="./img/svg/arrow_left_01.svg">
+                        </a>
+                    </div>
+                    <div class="dash lg-only"></div>
+                </div>
+            </div>
+        </div>
+        <div class="tick-line bottom">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+            <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+        </div>
+
+        <!-- About-Us-Section-Tip Starts -->
+        <div class="section-tip">
+            <h4 class="yellow">02</h4>
+            <h4>&nbsp;|&nbsp;</h4>
+            <h4>ABOUT&nbsp;US</h4>
+        </div>
+        <!-- About-Us-Section-Tip Ends -->
+    </div>
+    <!-- About-Us Section Ends -->
+
+    <!-------------------------------- Services Section Starts ------------------------------------------->
+
+    <div class="section services" id="services">
+        <div class="section-wrap">
+            <div class="phrase">
+                <div class="dash lg-only"></div>
+                <div class="wrap">
+                    <h1>BE BOLD<br>IN DIGITAL</h1>
+                    <p class="text copy">
+                        Present your business to your target demographic and create an ever-lasting brand impression. 
+                        Maximize your brand awareness and by offering a seamless digital presence. 
+                        We are ready to craft the perfect digital solution to give your business the proper boost.
+                    </p>
+                    <a href="https://www.github.com/aarnav1729/" class="link-btn" target="_blank">
+                        <p>See&nbsp;All&nbsp;Our Services</p>
+                        <div class="btn-hov"></div>
+                        <img src="./img/svg/arrow_left_01.svg">
+                    </a>
+                </div>
+                <div class="dash lg-only"></div>
+            </div>
+            <div id="services-wrap">
+                <div class="dash lg-only"></div>
+                <div id="service-nav">
+                    <h2 id="DigitalExp" class="nav-text yellow">Digital<br><span class="exp-nav">Experience</span></h2>
+                    <div id="service-separator"></div>
+                    <h2 id="BrandExp" class="nav-text">Design<br><span class="exp-nav">Experience</span></h2>
+                </div>
+                <!-- slider -->
+                <div id="services-slide" class="swiper-container service-swipe">
+                    <div class="swiper-wrapper">
+                        <div id="digital" class="swiper-slide experience">
+                            <div class="services-list">
+                                <div class="service">
+                                    <img src="./img/svg/002-digital-marketing-6.svg">
+                                    <h4>WEB DESIGN <br> & DEVELOPMENT</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/028-mobile.svg">
+                                    <h4>MOBILE / WEB APPS<br>DEVELOPMENT</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/009-view.svg">
+                                    <h4>UI/UX&nbsp;DESIGN</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/040-augmented-reality.svg">
+                                    <h4>SEARCH ENGINE<br>OPTIMIZATION</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="branding" class="swiper-slide experience">
+                            <div class="services-list">
+                                <div class="service">
+                                    <img src="./img/svg/040-visibility.svg">
+                                    <h4>LOGO&nbsp;DESIGN</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/031-target.svg">
+                                    <h4>BRAND IDENTITY<br>DEVELOPMENT</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/041-video-player.svg">
+                                    <h4>VIDEO & PHOTOGRAPHY</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                                <div class="service">
+                                    <img src="./img/svg/043-cube.svg">
+                                    <h4>PACKAGE&nbsp;DESIGN</h4>
+                                    <h6 class="plus">+</h6>
+                                </div>
+                            </div>
+                        </div><!-- /slide-2 -->
+                    </div>
+                </div><!-- /slider -->
+                <div class="dash lg-only"></div>
+            </div><!-- /slider-wrap -->
+        </div>
+
+
+        <!-- Services-Section-Tip Starts -->
+        <div class="section-tip">
+            <h4 class="yellow">03</h4>
+            <h4>&nbsp;&nbsp;|</h4>
+            <h4>&nbsp;&nbsp;SERVICES</h4>
+        </div>
+        <!-- Servicess-Section-Tip Ends -->
+
+    </div>
+    <!-- Services Section Ends -->
+
+    <!------------------------------------------- Projects Section Starts ------------------------------------------->
+
+    <div class="section projects" id="works">
+
+        <div class="container-fluid">
+            <div id="work-phrase" class="row">
+                <div class="col-md-12">
+                    <h2>CASE STUDIES</h2>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!----Carousel---->
+                <div id="works-slide" class="col-md-9">
+                    <div class="swiper-container work-swiper">
+                        <div class="swiper-wrapper">
+
+                            <!----- slide 1 ----->
+                            <div class="swiper-slide container">
+                                <div class="row">
+
+                                    <!----- project 1 ----->
+                                    <div id="TDK" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank"></a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company 1</h1>
+                                                    <hr>
+                                                    <h5>UI/UX - Web Design</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src="./img/projects/tdk_ui/tdk_website_featured_pc.jpg"
+                                                        alt="Company 1">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!----- project 2 ----->
+                                    <div id="hoppa" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank"></a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company<br>2</h1>
+                                                    <hr>
+                                                    <h5>Brand Identity</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src="#"
+                                                        alt="Company 2">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!----- project 3 ----->
+                                    <div id="eicher" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank">
+                                                <div class="link-block"></div>
+                                            </a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company 3</h1>
+                                                    <hr>
+                                                    <h5>UI/UX - Web Design</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src=""
+                                                        alt="Company 3">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- /project 3 ----->
+                                </div>
+                            </div><!-- /slide 1 -->
+
+                            <!----- slide 2 ----->
+                            <div class="swiper-slide container">
+                                <div class="row">
+
+                                    <!----- project 1 ----->
+                                    <div id="coconut-magic" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank"></a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company 4</h1>
+                                                    <hr>
+                                                    <h5>Packaging Design</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src=""
+                                                        alt="Company 4">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- project 2 ----->
+                                    <div id="bay_villas" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank"></a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company 5</h1>
+                                                    <hr>
+                                                    <h5>Brand Identity</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src="/Users/aarnavsingh/Desktop/kasey/img/logo/clients/logo.png"
+                                                        alt="Company 5">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- project 3 ----->
+                                    <div id="coins" class="col-md-4 project">
+                                        <div class="project-content">
+                                            <a href="https://www.github.com/aarnav1729/" target="_blank">
+                                                <div class="link-block"></div>
+                                            </a>
+                                            <div class="project-info">
+                                                <div class="project-name">
+                                                    <h1>Company 6</h1>
+                                                    <hr>
+                                                    <h5>UI/UX - Web Design</h5>
+                                                </div>
+                                            </div>
+                                            <div class="works-img">
+                                                <picture>
+                                                    <source media="(min-width:768px)">
+                                                    <img src="#"
+                                                        alt="Company 6">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!----- /project 3 ----->
+                                </div>
+                            </div>
+                            <!----- /slide 2 ----->
+                        </div>
+                    </div>
+                </div>
+                <!----/carousel---->
+                <!----See All---->
+                <div id="see-all" class="col-md-3 project">
+                    <a href="https://www.github.com/aarnav1729/" target="_blank">
+                        <div class="link-text">
+                            <img class="plusImg" src="./img/svg/plus-mark_black.svg">
+                            <p>See<br>All<br>Our Work</p>
+                        </div>
+                        <svg id="see-all-svg" viewbox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!----/container---->
+
+
+        <!-- Projects-Section-Tip Starts -->
+        <div class="section-tip">
+            <h4 class="yellow">04</h4>
+            <h4>&nbsp;&nbsp;|</h4>
+            <h4>&nbsp;&nbsp;Projects</h4>
+        </div>
+        <!-- Projects-Section-Tip Ends -->
+
+    </div>
+    <!-- Works Section Ends -->
+
+    <!------------------------------------------- Clients Section Starts ------------------------------------------->
+
+    <div class="section clients" id="clients">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 phrase">
+                    <div class="dash lg-only"></div>
+                    <h1>Improve your online presence</h1>
+                    <div class="dash lg-only"></div>
+                </div>
+                <div class="col-md-6 d-flex client-list">
+                    <img src="./img/svg/plus-mark.svg" class="plusImg top-l">
+                    <img src="./img/svg/plus-mark.svg" class="plusImg top-r">
+                    <div class="swiper-container client-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="client-pack swiper-slide">
+                                <img src="img/logo/clients/logo.png" alt="Createrix">
+                                <img src="img/logo/clients/logo.png"
+                                    alt="Bay Villas Balapitiya">
+                                <img src="logo.png" alt="Mooniak">
+                            </div>
+                            <div class="client-pack swiper-slide">
+                                <img src="https://github.com/aarnav1729/SnSLandingPage/blob/main/logo.png"
+                                    alt="Seal Group">
+                                <img src="https://github.com/aarnav1729/SnSLandingPage/blob/main/logo.png"
+                                    alt="The Kiss Creatives">
+                                <img src="./img/logo/clients/createrix_logo.png"
+                                    alt="Hoppa Galle Fort">
+                            </div>
+                            <div class="client-pack swiper-slide">
+                                <img src="./img/logo/clients/createrix_logo.png"
+                                    alt="Shore by Hoppa Unawatuna">
+                                <img src="./img/logo/clients/createrix_logo.png" alt="Sense Imagery">
+                                <img src="./img/logo/clients/createrix_logo.png" alt="TDK Architects">
+                            </div>
+                            <div class="client-pack swiper-slide">
+                                <img src="./img/logo/clients/createrix_logo.png"
+                                    alt="Ceylon Biscuits Limited">
+                                <img src="./img/logo/clients/createrix_logo.png"
+                                    alt="IJ Interiors">
+                                <img src="./img/logo/clients/createrix_logo.png" alt="Senok">
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/svg/plus-mark.svg" class="plusImg bottom">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Clients-Section-Tip Starts -->
+        <div class="section-tip">
+            <h4 class="yellow">05</h4>
+            <h4>&nbsp;&nbsp;|</h4>
+            <h4>&nbsp;&nbsp;Clients</h4>
+        </div>
+        <!-- Clients-Section-Tip Ends -->
+
+    </div>
+    <!-- Clients Section Ends -->
+
+    <!------------------------------------------- Contact Section Starts ------------------------------------------->
+
+    <div class="section contact" id="home-contact">
+        
+        <div class="section-wrap">
+            <div class="tick-line">
+                <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+                <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+                <img class="plusImg tick" src="./img/svg/plus-mark.svg">
+            </div>
+            <div class="phrase">
+                <div class="dash lg-only"></div>
+                <h1 class="">Let's Boost<br>Your Business</h1>
+                <div class="dash lg-only"></div>
+            </div>
+
+            <div class="contact-info">
+                <div class="dash lg-only top"></div>
+                <div id="phone" class="contact-method">
+                    <h5>Call</h5>
+                    <a href="tel:+16128426315">+1 6128426315</a>
+                </div>
+                <hr class="">
+                <div id="phone" class="contact-method">
+                    <h5>E mail</h5>
+                    <a href="mailto:info@kaseyskanvas.com" >info@kaseyskanvas.com</a>
+                </div>
+                <hr class="">
+                <div id="social" class="contact-method">
+                        <div id="social-bar-contact" class="social-media zero-width">
+                            <div id="facebook" class="social-media-item">
+                                <a class="link" href="https://github.com/aarnav1729/" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                            <div id="twitter" class="social-media-item">
+                                <a class="link" href="https://github.com/aarnav1729/" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div id="linkedin" class="social-media-item">
+                                <a class="link" href="https://www.linkedin.com/company/aarnavsingh/" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                            <div id="behance" class="social-media-item">
+                                <a class="link" href="https://github.com/aarnav1729/" target="_blank">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                            </div>
+                            <div id="instagram" class="social-media-item">
+                                <a class="link" href="https://www.instagram.com/aarnavsinghh/" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <hr class="">
+                <div id="locate" class="contact-method location">
+                    <p>Kasey's Kanvas<br>Como Apt 69,<br>Saint Paul, Minnesota.</p>
+                </div>
+                <img class="plusImg tick top" src="./img/svg/plus-mark.svg">
+                <img class="plusImg tick bottom lg-only" src="./img/svg/plus-mark.svg">
+                
+                <div class="dash lg-only bottom"></div>
+            </div>
+        </div>
+        
+        <!-- Contact-Section-Tip Starts -->
+            <div class="section-tip">
+                <h4 class="yellow">06</h4>                
+                <h4>&nbsp;&nbsp;|</h4>
+                <h4 class="">&nbsp;&nbsp;Contact</h4>
+            </div>
+        <!-- Contact-Section-Tip Ends -->
+        
+    </div>
+    <!-- Contact Section Ends -->
+
+
+    <!------------------------------------------- Footer Starts ------------------------------------------->
+
+    <div id="home-footer" class="footer">
+        <p>&copy;
+            <script>
+                document.write((new Date().getFullYear()-1) + " - " + (new Date().getFullYear()));
+            </script>
+            &nbsp;Kasey's Kanvas. All rights reserved<br>Developed with &nbsp;<i class="fas fa-heart"></i>&nbsp; in Minnesota
+        </p>
+    </div>
+    <!-- Footer Ends -->
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/84/three.min.js"></script>
+
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script id="swiper_v4.5.0_js" src="./vendor/swiper/js/swiper.min.js"></script>
+    <script id="iziToast_v1.4.0_js" src="./vendor/iziToast/iziToast.min.js"></script>
+
+    <!-- Main Scripts -->
+    <script id="webgl_support_detector" src="./js/detector.js"></script>
+    <script id="three.js_animation" src="./js/animation.js"></script>
+    <script id="main_js" src="./js/themeJS.js"></script>
+    
+
+    <script>
+        var serviceSwiper = new Swiper('.service-swipe', {
+            pagination: {
+                el: '.service-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 4000,
+            },
+        })
+
+        var Digital = document.getElementById("DigitalExp");
+        var Brand = document.getElementById("BrandExp");
+
+        Digital.onclick = function () {
+            servicePick(this, 0)
+        };
+        Brand.onclick = function () {
+            servicePick(this, 1)
+        };
+
+        function servicePick(service, slide) {
+            if (service.classList.contains("yellow")) {
+                return;
+            } else {
+                serviceSwiper.slideTo(slide);
+            }
+        }
+
+        serviceSwiper.on('slideChange', function () {
+            Digital.classList.toggle("yellow");
+            Brand.classList.toggle("yellow");
+        })
+
+        var workSwiper = new Swiper('.work-swiper', {
+            slidesPerView: 'auto',
+            pagination: {
+                el: '.work-pagination',
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000
+            }
+        })
+
+        var clientSwiper = new Swiper('.client-swiper', {
+            slidesPerView: 3,
+            loop: true,
+            breakpoints: {
+                576: {
+                    slidesPerView: 1,
+                }
+            },
+            autoplay: {
+                delay: 2500,
+            }
+        })
+
+        var teamSwiper = new Swiper('.team-swiper', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 4,
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 'auto',
+                },
+            },
+            autoplay: {
+                delay: 4000
+            },
+        })
+    </script>
+
+</body>
+
+</html>
