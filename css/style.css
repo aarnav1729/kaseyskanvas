@@ -1,15 +1,3 @@
-/* 
-    CYBEROCTANE.CSS v1.0
-    August 2018 
-    www.cyberoctane.com
-*/
-
-/* 
-    ====================
-    == Scroll Styling ==
-    ====================
-*/
-
 ::-webkit-scrollbar {
     width: 3px;
 }
@@ -270,7 +258,7 @@ a {
 
 a:hover,
 a:focus:hover:active {
-    color: #F8EF00;
+    color: skyblue;
     text-decoration: none;
 }
 
@@ -291,7 +279,7 @@ body>hr {
 }
 
 .nav-arrow h1 {
-    color: #ff7f15;
+    color: skyblue;
     font-weight: 300;
 }
 
@@ -320,7 +308,7 @@ body>hr {
 }
 
 .yellow {
-    color: #F8EF00;
+    color: skyblue;
 }
 
 /*---- text-format classes ----*/
