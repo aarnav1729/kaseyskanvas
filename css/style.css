@@ -7,7 +7,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #F8EF00;
+    background: skyblue;
 }
 
 /* 
@@ -162,7 +162,7 @@ body {
 }
 
 .link-btn:active {
-    background-color: #F8EF00;
+    background-color: skyblue;
 }
 
 
@@ -616,7 +616,7 @@ p {
 }
 
 #cyberlogo:active {
-    fill: #F8EF00;
+    fill: skyblue;
     width: 6.5vw;
 }
 
@@ -703,27 +703,27 @@ p {
     }
     
     #cyberlogo:active {
-        fill: #F8EF00;
+        fill: skyblue;
         width: 33px;
     }
 
     .nav-logo:hover #cyberlogo {
-        fill: #F8EF00;
+        fill: skyblue;
     }
 
     .nav-logo:hover .hover-text {
-        fill: #F8EF00;
+        fill: skyblue;
         width: 8vw;
     }
 
     #menu-btn:hover .burger {
         width: 3px;
         margin: 0 auto;
-        background-color: #F8EF00;
+        background-color: skyblue;
     }
 
     #menu-btn:hover .cross {
-        background-color: #F8EF00;
+        background-color: skyblue;
     }
 }
 
@@ -776,7 +776,7 @@ p {
 }
 
 .menu-item:active * {
-    color: #F8EF00;
+    color: skyblue;
 }
 
 .menu-item .plus {
@@ -851,7 +851,7 @@ p {
 
     .menu-item:hover * {
         opacity: 1;
-        color: #F8EF00;
+        color: skyblue;
     }
 
     .menu-item:hover .plus {
@@ -991,7 +991,7 @@ p {
 
     .social-media-item a:hover,
     .social-media-item a:focus:hover {
-        color: #F8EF00;
+        color: skyblue;
     }
 
 }
@@ -1419,7 +1419,7 @@ p {
     }
 
     #home-nav a:hover p {
-        color: #F8EF00;
+        color: skyblue;
         font-weight: 400;
     }
 
@@ -1427,7 +1427,7 @@ p {
         display: none;
         position: absolute;
         transform: translate(-1em);
-        color: #F8EF00;
+        color: skyblue;
     }
 
     #home-nav a:hover .plus {
@@ -1438,7 +1438,7 @@ p {
         position: absolute;
         bottom: -50%;
         border: 0;
-        border-top: 1px solid #F8EF00;
+        border-top: 1px solid skyblue;
         width: 0;
         -webkit-transition: width 0.5s;
         -moz-transition: width 0.5s;
@@ -1669,7 +1669,7 @@ p {
 }
 
 #service-nav .yellow {
-    color: #F8EF00;
+    color: skyblue;
 }
 
 #services .tilde {
@@ -1882,7 +1882,7 @@ p {
     width: 0;
     min-width: 0%;
     transition: min-width 0.5s;
-    fill: #F8EF00;
+    fill: skyblue;
 }
 
 #works-slide {
@@ -2252,7 +2252,7 @@ p {
 .member-photo {
     width: 40vw;
     height: 40vw;
-    background-color: #F8EF00;
+    background-color: skyblue;
 }
 
 .member-photo img {
@@ -2521,7 +2521,7 @@ p {
 }
 
 .footer i {
-    color: #F8EF00;
+    color: skyblue;
     font-size: 80%;
 }
 
